@@ -4,6 +4,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -25,11 +26,11 @@
             </objects>
             <point key="canvasLocation" x="1691" y="-490"/>
         </scene>
-        <!--Item-->
+        <!--Learn More-->
         <scene sceneID="W8s-cG-kHg">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="aHN-Qi-iLe" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="Cqa-GL-j18"/>
+                    <tabBarItem key="tabBarItem" title="Learn More" image="house.fill" catalog="system" id="Cqa-GL-j18"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="o1b-Z7-cK3">
                         <rect key="frame" x="0.0" y="59" width="393" height="96"/>
@@ -51,8 +52,11 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="bIS-y1-DPp" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="VVW-Wp-dBm">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" name="AccentColor"/>
+                        <tabBarAppearance key="standardAppearance" backgroundEffect="systemUltraThinMaterial"/>
                     </tabBar>
                     <connections>
                         <segue destination="aHN-Qi-iLe" kind="relationship" relationship="viewControllers" id="ZAb-oU-U6w"/>
@@ -65,7 +69,7 @@
             </objects>
             <point key="canvasLocation" x="-215" y="549"/>
         </scene>
-        <!--Item-->
+        <!--Explore-->
         <scene sceneID="RlM-4z-Ofu">
             <objects>
                 <viewController id="viY-Qf-gXc" sceneMemberID="viewController">
@@ -75,13 +79,13 @@
                         <viewLayoutGuide key="safeArea" id="tfG-mX-FTo"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="VJK-fP-YWF"/>
+                    <tabBarItem key="tabBarItem" title="Explore" image="magnifyingglass" catalog="system" id="VJK-fP-YWF"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hbg-Fm-BFU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="954" y="200"/>
         </scene>
-        <!--Item-->
+        <!--Library-->
         <scene sceneID="9dU-bW-EKm">
             <objects>
                 <viewController id="Vd2-nR-iEP" sceneMemberID="viewController">
@@ -91,13 +95,13 @@
                         <viewLayoutGuide key="safeArea" id="Zwe-cj-9si"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="brk-FK-hNe"/>
+                    <tabBarItem key="tabBarItem" title="Library" image="rectangle.stack.badge.play.fill" catalog="system" id="brk-FK-hNe"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7cH-Wf-Ix7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="953" y="1608"/>
         </scene>
-        <!--Item-->
+        <!--Notifications-->
         <scene sceneID="nzb-UQ-d28">
             <objects>
                 <viewController id="T3J-os-M7r" sceneMemberID="viewController">
@@ -107,7 +111,7 @@
                         <viewLayoutGuide key="safeArea" id="4Ms-PP-xkG"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="cqK-XC-0Iv"/>
+                    <tabBarItem key="tabBarItem" title="Notifications" image="bell.fill" catalog="system" id="cqK-XC-0Iv"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6uH-OA-2eO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -115,6 +119,13 @@
         </scene>
     </scenes>
     <resources>
+        <image name="bell.fill" catalog="system" width="123" height="128"/>
+        <image name="house.fill" catalog="system" width="128" height="104"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="117"/>
+        <image name="rectangle.stack.badge.play.fill" catalog="system" width="128" height="118"/>
+        <namedColor name="AccentColor">
+            <color red="0.3843137254901961" green="0.20392156862745098" blue="0.83529411764705885" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
